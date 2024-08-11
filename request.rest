@@ -1,0 +1,23 @@
+### getHotels
+POST http://localhost:5001/hotels
+Content-Type: application/json
+
+{
+  "ids": ["iJhz", "SjyX", "asfwf"]
+}
+
+### getHotelsBy destination_id
+POST http://localhost:5001/hotels
+Content-Type: application/json
+
+{
+  "destination_id": 5432
+}
+
+### getHotels with error
+POST http://localhost:5001/hotels
+Content-Type: application/json
+
+{
+
+}
