@@ -68,7 +68,7 @@ Request body:
 
 3. After that, application will pass the formatted data to `hotelDataIntegrationFactory` to sanitize, normalize and merge the data based on the data source.
 
-4. All the completed data will be saved into the memory chache with key-value pairs, example:
+4. All the completed data will be saved into the memory cache with key-value pairs, example:
 
 ```bash
 {
