@@ -10,8 +10,6 @@ import { hotelDataIntegrationFactory, mergeHotelData } from "../utils";
 export const getHotelsData = async () => {
   const suppliersData = await loadSupplierData();
 
-  // console.log("supppppp");
-  // console.log(suppliersData);
   supplierDataIntegration(suppliersData);
   return "success";
 };

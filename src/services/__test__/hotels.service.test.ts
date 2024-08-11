@@ -4,9 +4,6 @@ import { getHotelsData, loadSupplierData } from "../hotels.service";
 import sup1 from "./fakeRes/sup1.json";
 import sup2 from "./fakeRes/sup2.json";
 import sup3 from "./fakeRes/sup3.json";
-import formattedSup1 from "./fakeRes/formattedSup1.json";
-import formattedSup2 from "./fakeRes/formattedSup2.json";
-import formattedSup3 from "./fakeRes/formattedSup3.json";
 import MockAdapter from "axios-mock-adapter";
 import { afterEach } from "node:test";
 
@@ -32,9 +29,9 @@ describe("Hotels Service", () => {
     const result = await getHotelsData();
     const suppliersData = await loadSupplierData();
     expect(suppliersData).toEqual({
-      acme: formattedSup1,
-      patagonia: formattedSup2,
-      paperflies: formattedSup3,
+      acme: sup1,
+      patagonia: sup2,
+      paperflies: sup3,
     });
     expect(result).toBe("success");
   });
